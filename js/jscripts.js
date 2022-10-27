@@ -50,7 +50,7 @@ function validateFirstDig (ccArray) {
     return "Your card is Mastercard";
   }
   else if (ccArray[0] === "6") {
-    return "Your card is Discover card"
+    return "Your card is Discover card";
   }
   return "Your card is invalid"
 }

@@ -43,3 +43,12 @@ Expected Output: "Your card is Mastercard."
 Test: "It should validate if the card is a Discover card.
 Code: validateFirstDig(6102080880435620)
 Expected Output: "Your card is a Discover card."
+
+Test: "It should recognize that the card is invalid."
+Code: validateFirstDig(7102080880435620)
+      validateFirstDig(8102080880435620)
+      validateFirstDig(9102080880435620)
+      validateFirstDig(0102080880435620)
+      validateFirstDig(1102080880435620)
+      validateFirstDig(2102080880435620)
+Expected Output: "Your card is invalid."
